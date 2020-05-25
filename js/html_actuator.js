@@ -61,8 +61,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   var classes = ["tile", "tile-" + tile.value, positionClass];
   var value = tile.value;
 
-  if (value > 2048) classes.push("tile-super");
-  if (value > 32768) {
+  if (value > 137438953472) classes.push("tile-super");
+  if (value > 590295810358705700000) {
     (function() {
       var i = 1, n = value;
       while (n > 2) {
